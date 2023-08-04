@@ -1,5 +1,5 @@
 # The Dancing Pony
-# Final Test For Senior Backend Engineer
+# Final Test For Backend Engineer
 ### Objective
 
 Your assignment is to implement a restaurant REST API using Node and Nest.
