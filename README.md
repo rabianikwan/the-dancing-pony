@@ -1,50 +1,73 @@
-# The Dancing Pony
-# Final Test For Senior Backend Engineer ar PalmCode
-### Objective
+<p align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+</p>
 
-Your assignment is to implement a restaurant REST API using Node and Nest.
+[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
+[circleci-url]: https://circleci.com/gh/nestjs/nest
 
-### Brief
+  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
+    <p align="center">
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
+<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
+<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
+<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
+<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
+<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
+  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
+    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
+  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
+</p>
+  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
+  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-Frogo Baggins, a hobbit from the Shire, has a great idea. He wants to build a restaurant that serves traditional dishes from the world of Middle Earth. The restaurant will be called "The Dancing Pony" and will have a cozy atmosphere.
+## Description
 
-Frogo has hired you to build the website for his restaurant. As payment, he has offered you either a chest of gold or a ring. Choose wisely.
+[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-### Tasks
+## Installation
 
--   Implement assignment using:
-    -   Language: **Node**
-    -   Framework: **Nest**
--   Implement a REST API returning JSON
--   Implement a custom user model with a "nickname" field
--   Implement a dish model. Each dish should have a name, description, image, and price.
-    -   Choose the appropriate data type for each field
-    -   Add validation to the dish model fields to ensure that the name and description fields are unique
--   Provide an endpoint to authenticate with the API using username, password and return a JWT
--   Provide REST resources for the authenticated user for the Dish resource
-    -   Implement the following CRUD (Create, Read, Update, Delete) operations for this resource:
-        -   **Create**: Allow authenticated users to create new dishes
-        -   **Read**: Allow authenticated users to view details of specific dishes, as well as a list of dishes
-            -   Make the List resource searchable with query parameters
-            -   Implement pagination for the /dishes resource. Allow users to set a limit and offset for the number of dishes returned in the response
-        -   **Update**: Allow authenticated users to update dishes
-        -   **Delete**: Allow authenticated users to delete dishes
-    -   Implement an endpoint to rate a dish (POST)
-        -   Store the rating on the Dish model
-    -   Implement rate limiting for the /dishes resource to prevent abuse
+```bash
+$ npm install
+```
 
-### Evaluation Criteria
+## Running the app
 
--   **Node** best practices
--   Make sure that users can only rate dishes once
--   Bonus: Make sure the user _Sméagol_ is unable to rate any dish at "The Dancing Pony"
--   Bonus: Write an API test for the rating endpoint
+```bash
+# development
+$ npm run start
 
-### Closing Words
+# watch mode
+$ npm run start:dev
 
-Please organize, design, test, and document your code as if it were going into production - then push your changes to the master branch. After you have pushed your code, 
-please notify us via email. We will then review your submission and provide feedback as soon as possible.
+# production mode
+$ npm run start:prod
+```
 
-Best of luck, and happy coding!
+## Test
 
-Brimvoid 🚀
+```bash
+# unit tests
+$ npm run test
+
+# e2e tests
+$ npm run test:e2e
+
+# test coverage
+$ npm run test:cov
+```
+
+## Support
+
+Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+
+## Stay in touch
+
+- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
+- Website - [https://nestjs.com](https://nestjs.com/)
+- Twitter - [@nestframework](https://twitter.com/nestframework)
+
+## License
+
+Nest is [MIT licensed](LICENSE).
