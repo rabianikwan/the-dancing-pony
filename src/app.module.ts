@@ -4,6 +4,7 @@ import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import * as path from 'path';
 import * as process from 'process';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import * as process from 'process';
       autoLoadEntities: true,
       synchronize: true,
     }),
+    AuthModule
   ],
   controllers: [AppController],
   providers: [AppService],
