@@ -5,6 +5,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import * as path from 'path';
 import * as process from 'process';
 import { AuthModule } from './auth/auth.module';
+import { RateModule } from './rate/rate.module';
 
 @Module({
   imports: [
@@ -19,7 +20,8 @@ import { AuthModule } from './auth/auth.module';
       autoLoadEntities: true,
       synchronize: true,
     }),
-    AuthModule
+    AuthModule,
+    RateModule
   ],
   controllers: [AppController],
   providers: [AppService],
